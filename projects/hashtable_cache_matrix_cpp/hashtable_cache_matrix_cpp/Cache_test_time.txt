@@ -1,0 +1,10 @@
+Size of the storage(csv file): 10000; Number of calls that was made: 100000
+Cache is 20 times smaller than the storage
+9 out of 10 calls were made to the 10 percent of the storage
+
+With LRUCache: 206.145 sec
+Number of calls that was found in the cache: 40145; not found: 59855
+Number of elements in cache: 500
+Max bucket height in the end: 4
+
+Without LRUCache: 331.833 sec

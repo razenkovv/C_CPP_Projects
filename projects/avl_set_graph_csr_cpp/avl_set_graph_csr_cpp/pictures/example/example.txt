@@ -1,0 +1,87 @@
+5 8 //число вершин, число ребер
+1 //0 - список ребер (начиная с "левого верхнего угла"), 1 - матрица смежности
+0 0 1 4 0
+1 0 0 0 0
+2 0 0 1 0
+0 5 6 0 0
+0 0 0 3 0
+
+
+GRAPH: (adjacency matrix)
+0 0 1 4 0
+1 0 0 0 0
+2 0 0 1 0
+0 5 6 0 0
+0 0 0 3 0
+
+
+DIJKSTRA:
+Distances:
+0 7 1 2 inf
+1 0 2 3 inf
+2 6 0 1 inf
+6 5 6 0 inf
+9 8 9 3 0
+
+Ways:
+from 1 to 1: 1
+from 1 to 2: 1 3 4 2
+from 1 to 3: 1 3
+from 1 to 4: 1 3 4
+from 1 to 5: no way
+from 2 to 1: 2 1
+from 2 to 2: 2
+from 2 to 3: 2 1 3
+from 2 to 4: 2 1 3 4
+from 2 to 5: no way
+from 3 to 1: 3 1
+from 3 to 2: 3 4 2
+from 3 to 3: 3
+from 3 to 4: 3 4
+from 3 to 5: no way
+from 4 to 1: 4 2 1
+from 4 to 2: 4 2
+from 4 to 3: 4 3
+from 4 to 4: 4
+from 4 to 5: no way
+from 5 to 1: 5 4 2 1
+from 5 to 2: 5 4 2
+from 5 to 3: 5 4 3
+from 5 to 4: 5 4
+from 5 to 5: 5
+
+
+FLOYD_WARSHALL:
+Distances:
+0 7 1 2 inf
+1 0 2 3 inf
+2 6 0 1 inf
+6 5 6 0 inf
+9 8 9 3 0
+
+Ways:
+from 1 to 1: 1
+from 1 to 2: 1 3 4 2
+from 1 to 3: 1 3
+from 1 to 4: 1 3 4
+from 1 to 5: no way
+from 2 to 1: 2 1
+from 2 to 2: 2
+from 2 to 3: 2 1 3
+from 2 to 4: 2 1 3 4
+from 2 to 5: no way
+from 3 to 1: 3 1
+from 3 to 2: 3 4 2
+from 3 to 3: 3
+from 3 to 4: 3 4
+from 3 to 5: no way
+from 4 to 1: 4 2 1
+from 4 to 2: 4 2
+from 4 to 3: 4 3
+from 4 to 4: 4
+from 4 to 5: no way
+from 5 to 1: 5 4 2 1
+from 5 to 2: 5 4 2
+from 5 to 3: 5 4 3
+from 5 to 4: 5 4
+from 5 to 5: 5
